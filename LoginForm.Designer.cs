@@ -41,6 +41,7 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.lblSlogan = new System.Windows.Forms.Label();
             this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
@@ -50,6 +51,7 @@
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.pnlLogin.Controls.Add(this.btnLogin);
             this.pnlLogin.Controls.Add(this.lblLogin);
             this.pnlLogin.Controls.Add(this.lblReg);
             this.pnlLogin.Controls.Add(this.pbPass);
@@ -80,7 +82,7 @@
             // 
             this.lblReg.AutoSize = true;
             this.lblReg.Font = new System.Drawing.Font("Bookman Old Style", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))));
-            this.lblReg.Location = new System.Drawing.Point(179, 376);
+            this.lblReg.Location = new System.Drawing.Point(113, 384);
             this.lblReg.Name = "lblReg";
             this.lblReg.Size = new System.Drawing.Size(162, 18);
             this.lblReg.TabIndex = 8;
@@ -180,6 +182,18 @@
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(171)))), ((int)(((byte)(174)))));
+            this.btnLogin.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Italic);
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnLogin.Location = new System.Drawing.Point(140, 341);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(96, 40);
+            this.btnLogin.TabIndex = 22;
+            this.btnLogin.Text = "Log-in";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,6 +230,7 @@
         private System.Windows.Forms.Label lblReg;
         private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 

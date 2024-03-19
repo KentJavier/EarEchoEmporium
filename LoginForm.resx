@@ -121,7 +121,7 @@
   <data name="pbPass.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACQeSURBVHhe7d0J
+        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACQeSURBVHhe7d0J
         uH11Xe9xBnEAxBEzKDVMNA1RyMxyKhUptasplWmSw8XyolROpVaoOA+JpjmnmOF0tcQshyxzKE2ccsgx
         TVAgHCEFEbqf7w3iXvj9//ucfc5ae63ffr2e5/08PMD/nPM/67fW+Z6917ALAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAA9G2fdFD62XTv9JD02PRH6cT0tvSBC/vn9LkLOz197cLqny/69/X/XPT/15+t
@@ -282,7 +282,7 @@
   <data name="pbUsername.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        0QAADdEBwivf4wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAD9tSURBVHhe7d15
+        0AAADdABEGw9BwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAD9tSURBVHhe7d15
         /G5jvf9xe29s8xCVWUoiKkKpVNJRUaQoKZUGDeQ0q0M4UpHkNHFoVuikNM8kijRpUpGkOUWSSKac3/tz
         3N9fl9V77/0d7vsa1nq9H4/nP59H5/ista593ff3Xmtd11L/+7//C6AhyjryMHmOvEqOlOPknXKqfFLO
         km/IRfILuVJukFvlr3KF/Ey+L+fJF+UM+YCcIG+Sw+Xl8hTZWlZ1/QBoky0CKEtJP+SPko/KD+R6if9B
@@ -559,7 +559,7 @@
   <data name="pbLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAADx0RVh0Q29tbWVudAB4cjpkOkRBRl9NVTlXQUxBOjExLGo6MTA2Nzc3NDQ0ODY1
+        wAAADsABataJCQAAADx0RVh0Q29tbWVudAB4cjpkOkRBRl9NVTlXQUxBOjExLGo6MTA2Nzc3NDQ0ODY1
         NDM0NDkwNix0OjI0MDMxMTEy5PYkvAAAVTlJREFUeF7t3ff31GTePnDPnt09FkCUqoiiYkHABoL0ori4
         Aq6KiLCAohQBARUQkaIi1UJTFLGLKKIIgkpXLCBYUBCUIk2KbPnuPn/B/T1XPMPmM1yTZJLMZOae64fX
         8XmWud/JzCeTa5Lc5YT/+7//MyIiIlLcFOgiIiIWUKCLiIhYQIEuIiJiAQW6iIiIBRToIiIiFlCgi4iI
