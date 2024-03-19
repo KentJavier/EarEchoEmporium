@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbsys32ProjModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="customerId" />
+    </Key>
+    <Property Name="customerId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="firstName" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="lastName" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="email" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="Password" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="contactNum" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="birthday" Nullable="false" Type="date" />
+    <Property Name="registrationDate" Nullable="false" Type="date" />
+  </EntityType>
+  <EntityType Name="Order_Details">
+    <Key>
+      <PropertyRef Name="orderDetId" />
+    </Key>
+    <Property Name="orderDetId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="orderId" Nullable="false" Type="int" />
+    <Property Name="productId" Nullable="false" Type="int" />
+    <Property Name="quantity" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="orderId" />
+    </Key>
+    <Property Name="orderId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="customerId" Nullable="false" Type="int" />
+    <Property Name="orderDate" Nullable="false" Type="date" />
+    <Property Name="totalPrice" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="productId" />
+    </Key>
+    <Property Name="productId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="productBrand" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="productModel" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="productPrice" Nullable="false" Type="int" />
+    <Property Name="productTune" Nullable="false" MaxLength="50" Type="varchar" />
+    <Property Name="productQty" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityContainer Name="dbsys32ProjModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order_Details" EntityType="Self.Order_Details" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
