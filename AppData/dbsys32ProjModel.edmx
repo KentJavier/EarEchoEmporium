@@ -9,43 +9,43 @@
           <Key>
             <PropertyRef Name="customerId" />
           </Key>
-          <Property Name="customerId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="firstName" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="lastName" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="email" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="Password" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="contactNum" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="birthday" Nullable="false" Type="date" />
-          <Property Name="registrationDate" Nullable="false" Type="date" />
+          <Property Name="customerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="lastName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="contactNum" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="registrationDate" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="Order_Details">
           <Key>
             <PropertyRef Name="orderDetId" />
           </Key>
-          <Property Name="orderDetId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="orderId" Nullable="false" Type="int" />
-          <Property Name="productId" Nullable="false" Type="int" />
-          <Property Name="quantity" Nullable="false" Type="int" />
+          <Property Name="orderDetId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="orderId" Type="int" Nullable="false" />
+          <Property Name="productId" Type="int" Nullable="false" />
+          <Property Name="quantity" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Orders">
           <Key>
             <PropertyRef Name="orderId" />
           </Key>
-          <Property Name="orderId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="customerId" Nullable="false" Type="int" />
-          <Property Name="orderDate" Nullable="false" Type="date" />
-          <Property Name="totalPrice" Nullable="false" Type="int" />
+          <Property Name="orderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="customerId" Type="int" Nullable="false" />
+          <Property Name="orderDate" Type="date" Nullable="false" />
+          <Property Name="totalPrice" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
             <PropertyRef Name="productId" />
           </Key>
-          <Property Name="productId" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
-          <Property Name="productBrand" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="productModel" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="productPrice" Nullable="false" Type="int" />
-          <Property Name="productTune" Nullable="false" MaxLength="50" Type="varchar" />
-          <Property Name="productQty" Nullable="false" Type="int" />
+          <Property Name="productId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="productBrand" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="productModel" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="productPrice" Type="int" Nullable="false" />
+          <Property Name="productTune" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="productQty" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="dbsys32ProjModelStoreContainer">
           <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
@@ -62,43 +62,43 @@
           <Key>
             <PropertyRef Name="customerId" />
           </Key>
-          <Property Name="customerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="firstName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="lastName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="email" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="password" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="contactNum" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="birthday" Nullable="false" Precision="0" Type="DateTime" />
-          <Property Name="registrationDate" Nullable="false" Precision="0" Type="DateTime" />
+          <Property Name="customerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="contactNum" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="registrationDate" Type="DateTime" Nullable="false" Precision="0" />
         </EntityType>
         <EntityType Name="Order_Details">
           <Key>
             <PropertyRef Name="orderDetId" />
           </Key>
-          <Property Name="orderDetId" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="orderId" Nullable="false" Type="Int32" />
-          <Property Name="productId" Nullable="false" Type="Int32" />
-          <Property Name="quantity" Nullable="false" Type="Int32" />
+          <Property Name="orderDetId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="orderId" Type="Int32" Nullable="false" />
+          <Property Name="productId" Type="Int32" Nullable="false" />
+          <Property Name="quantity" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Orders">
           <Key>
             <PropertyRef Name="orderId" />
           </Key>
-          <Property Name="orderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="customerId" Nullable="false" Type="Int32" />
-          <Property Name="orderDate" Nullable="false" Precision="0" Type="DateTime" />
-          <Property Name="totalPrice" Nullable="false" Type="Int32" />
+          <Property Name="orderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="customerId" Type="Int32" Nullable="false" />
+          <Property Name="orderDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="totalPrice" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Products">
           <Key>
             <PropertyRef Name="productId" />
           </Key>
-          <Property Name="productId" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
-          <Property Name="productBrand" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="productModel" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="productPrice" Nullable="false" Type="Int32" />
-          <Property Name="productTune" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
-          <Property Name="productQty" Nullable="false" Type="Int32" />
+          <Property Name="productId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="productBrand" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productModel" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productPrice" Type="Int32" Nullable="false" />
+          <Property Name="productTune" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="productQty" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityContainer Name="dbsys32ProjEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Customers" EntityType="Self.Customers" />
@@ -119,9 +119,9 @@
                 <ScalarProperty Name="firstName" ColumnName="firstName" />
                 <ScalarProperty Name="lastName" ColumnName="lastName" />
                 <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="password" ColumnName="Password" />
+                <ScalarProperty Name="password" ColumnName="password" />
                 <ScalarProperty Name="contactNum" ColumnName="contactNum" />
-                <ScalarProperty Name="birthday" ColumnName="birthday" />
+                <ScalarProperty Name="address" ColumnName="address" />
                 <ScalarProperty Name="registrationDate" ColumnName="registrationDate" />
               </MappingFragment>
             </EntityTypeMapping>

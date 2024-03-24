@@ -20,7 +20,7 @@ namespace EarEchoEmporium.AppData
         public string email { get; set; }
         public string password { get; set; }
         public string contactNum { get; set; }
-        public System.DateTime birthday { get; set; }
+        public string address { get; set; }
         public System.DateTime registrationDate { get; set; }
     }
 }

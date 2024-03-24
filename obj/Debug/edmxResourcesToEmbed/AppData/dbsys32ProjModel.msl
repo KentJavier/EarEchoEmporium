@@ -4,46 +4,46 @@
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="dbsys32ProjModel.Customers">
         <MappingFragment StoreEntitySet="Customers">
-          <ScalarProperty Name="registrationDate" ColumnName="registrationDate" />
-          <ScalarProperty Name="address" ColumnName="address" />
-          <ScalarProperty Name="contactNum" ColumnName="contactNum" />
-          <ScalarProperty Name="password" ColumnName="password" />
-          <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="lastName" ColumnName="lastName" />
-          <ScalarProperty Name="firstName" ColumnName="firstName" />
           <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="contactNum" ColumnName="contactNum" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="registrationDate" ColumnName="registrationDate" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Order_Details">
       <EntityTypeMapping TypeName="dbsys32ProjModel.Order_Details">
         <MappingFragment StoreEntitySet="Order_Details">
-          <ScalarProperty Name="quantity" ColumnName="quantity" />
-          <ScalarProperty Name="productId" ColumnName="productId" />
-          <ScalarProperty Name="orderId" ColumnName="orderId" />
           <ScalarProperty Name="orderDetId" ColumnName="orderDetId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Orders">
       <EntityTypeMapping TypeName="dbsys32ProjModel.Orders">
         <MappingFragment StoreEntitySet="Orders">
-          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
-          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
-          <ScalarProperty Name="customerId" ColumnName="customerId" />
           <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Products">
       <EntityTypeMapping TypeName="dbsys32ProjModel.Products">
         <MappingFragment StoreEntitySet="Products">
-          <ScalarProperty Name="productQty" ColumnName="productQty" />
-          <ScalarProperty Name="productTune" ColumnName="productTune" />
-          <ScalarProperty Name="productPrice" ColumnName="productPrice" />
-          <ScalarProperty Name="productModel" ColumnName="productModel" />
-          <ScalarProperty Name="productBrand" ColumnName="productBrand" />
           <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="productBrand" ColumnName="productBrand" />
+          <ScalarProperty Name="productModel" ColumnName="productModel" />
+          <ScalarProperty Name="productPrice" ColumnName="productPrice" />
+          <ScalarProperty Name="productTune" ColumnName="productTune" />
+          <ScalarProperty Name="productQty" ColumnName="productQty" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

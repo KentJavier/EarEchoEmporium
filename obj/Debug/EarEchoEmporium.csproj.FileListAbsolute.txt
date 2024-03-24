@@ -23,3 +23,4 @@ C:\Users\a\Documents\EarEchoEmporium\EarEchoEmporium\obj\Debug\EarEchoEmporium.c
 C:\Users\a\Documents\EarEchoEmporium\EarEchoEmporium\obj\Debug\EarEchoEmporium.csproj.CopyComplete
 C:\Users\a\Documents\EarEchoEmporium\EarEchoEmporium\obj\Debug\EarEchoEmporium.exe
 C:\Users\a\Documents\EarEchoEmporium\EarEchoEmporium\obj\Debug\EarEchoEmporium.pdb
+C:\Users\a\Documents\EarEchoEmporium\EarEchoEmporium\obj\Debug\EarEchoEmporium.frmCustDashboard.resources

@@ -54,31 +54,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppData\Customers.cs">
-      <DependentUpon>EarEchoEmporiumModel.tt</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AppData\EarEchoEmporiumModel.Context.cs">
+    <Compile Include="AppData\dbsys32ProjModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EarEchoEmporiumModel.Context.tt</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="AppData\EarEchoEmporiumModel.cs">
+    <Compile Include="AppData\dbsys32ProjModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EarEchoEmporiumModel.tt</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="AppData\EarEchoEmporiumModel.Designer.cs">
+    <Compile Include="AppData\dbsys32ProjModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EarEchoEmporiumModel.edmx</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="AppData\Orders.cs">
-      <DependentUpon>EarEchoEmporiumModel.tt</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AppData\Order_Details.cs">
-      <DependentUpon>EarEchoEmporiumModel.tt</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.tt</DependentUpon>
     </Compile>
     <Compile Include="AppData\Products.cs">
-      <DependentUpon>EarEchoEmporiumModel.tt</DependentUpon>
+      <DependentUpon>dbsys32ProjModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDashboard.Designer.cs">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -95,6 +101,9 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UserRepository.cs" />
+    <EmbeddedResource Include="CustomerDashboard.resx">
+      <DependentUpon>CustomerDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,12 +119,12 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="AppData\EarEchoEmporiumModel.edmx">
+    <EntityDeploy Include="AppData\dbsys32ProjModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EarEchoEmporiumModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>dbsys32ProjModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="AppData\EarEchoEmporiumModel.edmx.diagram">
-      <DependentUpon>EarEchoEmporiumModel.edmx</DependentUpon>
+    <None Include="AppData\dbsys32ProjModel.edmx.diagram">
+      <DependentUpon>dbsys32ProjModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -132,19 +141,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppData\EarEchoEmporiumModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EarEchoEmporiumModel.Context.cs</LastGenOutput>
-      <DependentUpon>EarEchoEmporiumModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="AppData\EarEchoEmporiumModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EarEchoEmporiumModel.edmx</DependentUpon>
-      <LastGenOutput>EarEchoEmporiumModel.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="AppData\dbsys32ProjModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbsys32ProjModel.edmx</DependentUpon>
+      <LastGenOutput>dbsys32ProjModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AppData\dbsys32ProjModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>dbsys32ProjModel.edmx</DependentUpon>
+      <LastGenOutput>dbsys32ProjModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.lblLogin = new System.Windows.Forms.Label();
             this.lblReg = new System.Windows.Forms.Label();
             this.pbPass = new System.Windows.Forms.PictureBox();
@@ -38,10 +39,9 @@
             this.lblPass = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblSlogan = new System.Windows.Forms.Label();
             this.pbLogo = new System.Windows.Forms.PictureBox();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.pnlLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbUsername)).BeginInit();
@@ -60,23 +60,36 @@
             this.pnlLogin.Controls.Add(this.lblPass);
             this.pnlLogin.Controls.Add(this.txtPass);
             this.pnlLogin.Controls.Add(this.lblUsername);
-            this.pnlLogin.Controls.Add(this.txtUsername);
+            this.pnlLogin.Controls.Add(this.txtEmail);
             this.pnlLogin.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnlLogin.Location = new System.Drawing.Point(387, -2);
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(376, 459);
             this.pnlLogin.TabIndex = 0;
             // 
+            // btnLogin
+            // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(171)))), ((int)(((byte)(174)))));
+            this.btnLogin.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Italic);
+            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnLogin.Location = new System.Drawing.Point(140, 341);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(96, 40);
+            this.btnLogin.TabIndex = 22;
+            this.btnLogin.Text = "Log-in";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
             this.lblLogin.Font = new System.Drawing.Font("Bookman Old Style", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))));
             this.lblLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(63)))));
-            this.lblLogin.Location = new System.Drawing.Point(16, 28);
+            this.lblLogin.Location = new System.Drawing.Point(23, 42);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(79, 29);
+            this.lblLogin.Size = new System.Drawing.Size(98, 29);
             this.lblLogin.TabIndex = 9;
-            this.lblLogin.Text = "Login";
+            this.lblLogin.Text = "LOG-IN";
             // 
             // lblReg
             // 
@@ -87,6 +100,7 @@
             this.lblReg.Size = new System.Drawing.Size(162, 18);
             this.lblReg.TabIndex = 8;
             this.lblReg.Text = "No account? Click here";
+            this.lblReg.Click += new System.EventHandler(this.lblReg_Click);
             // 
             // pbPass
             // 
@@ -118,6 +132,7 @@
             this.cbShowPass.TabIndex = 5;
             this.cbShowPass.Text = "Show Password";
             this.cbShowPass.UseVisualStyleBackColor = true;
+            this.cbShowPass.CheckedChanged += new System.EventHandler(this.cbShowPass_CheckedChanged);
             // 
             // lblPass
             // 
@@ -139,6 +154,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(235, 34);
             this.txtPass.TabIndex = 3;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // lblUsername
             // 
@@ -151,15 +167,15 @@
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username";
             // 
-            // txtUsername
+            // txtEmail
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtUsername.Font = new System.Drawing.Font("Bookman Old Style", 13.8F, System.Drawing.FontStyle.Italic);
-            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(63)))));
-            this.txtUsername.Location = new System.Drawing.Point(61, 141);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(235, 34);
-            this.txtUsername.TabIndex = 1;
+            this.txtEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtEmail.Font = new System.Drawing.Font("Bookman Old Style", 13.8F, System.Drawing.FontStyle.Italic);
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(54)))), ((int)(((byte)(63)))));
+            this.txtEmail.Location = new System.Drawing.Point(61, 141);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(235, 34);
+            this.txtEmail.TabIndex = 1;
             // 
             // lblSlogan
             // 
@@ -181,18 +197,6 @@
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 1;
             this.pbLogo.TabStop = false;
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(171)))), ((int)(((byte)(174)))));
-            this.btnLogin.Font = new System.Drawing.Font("Bookman Old Style", 9F, System.Drawing.FontStyle.Italic);
-            this.btnLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnLogin.Location = new System.Drawing.Point(140, 341);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(96, 40);
-            this.btnLogin.TabIndex = 22;
-            this.btnLogin.Text = "Log-in";
-            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 
@@ -219,7 +223,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlLogin;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblSlogan;
         private System.Windows.Forms.Label lblPass;
